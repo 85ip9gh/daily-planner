@@ -14,14 +14,16 @@
 </head>
 <body>
   <p class="title">Natural Burial Form</p>
+  <!-- Form container -->
   <form class="form-container">
+    <!-- Name field -->
     <h1>Personal Information:</h1>
     <label for="firstName">First Name:</label>
     <input type="text" id="firstName" name="firstName">
 
     <label for="lastName">Last Name:</label>
     <input type="text" id="lastName" name="lastName">
-
+      <!-- DOB field -->
       <h3>Date of Birth</h3>
       <label for="dob">Month(MM):</label>
       <input type="text" id="dob" name="dob">
@@ -32,6 +34,7 @@
       <label for="dob">Year(YYYY):</label>
       <input type="text" id="dob" name="dob">
 
+      <!-- Contact information field -->
       <h2>Contact Information:</h2>
       <p>(Description)</p>
 
@@ -41,6 +44,7 @@
     <label for="phone">Phone Number:</label>
     <input type="tel" id="phone" name="phone">
 
+    <!-- Optional info field -->
     <h2>Optional Information:</h2>
     <p>(Description)</p>
 
@@ -50,6 +54,7 @@
     <label for="quote">Quote:</label>
     <input type="text" id="quote" name="quote">
 
+    <!-- Address field -->
     <h2>Address:</h2>
     <p>(Description)</p>
     <label for="address">Address:</label>
@@ -67,6 +72,7 @@
     <label for="country">Country:</label>
     <input type="text" id="country" name="country">
 
+    <!-- Primary contact info field -->
     <h2>Primary Contact Information:</h2>
     <p>(Description)</p>
     <label for="contactName">Name:</label>
@@ -78,6 +84,7 @@
     <label for="contactPhone">Phone Number:</label>
     <input type="tel" id="contactPhone" name="contactPhone">
 
+    <!-- COntact address field -->
     <h2>Contact Address:</h2>
     <p>(Description)</p>
     <label for="contactAddress">Address:</label>
@@ -95,9 +102,10 @@
     <label for="contactCountry">Country:</label>
     <input type="text" id="contactCountry" name="contactCountry">
 
-    <h2>Gravestone Marker:</h2>
+    <!-- Grave options buttons -->
+    <h2>Grave Marker:</h2>
 <p>(Description)</p>
-<label>Type of Gravestone Marker:</label>
+<label>Type of Grave Marker:</label>
 <div id="markerType" name="markerType">
   <div class="radio">
     <label for="type1">Type 1</label>
@@ -115,7 +123,8 @@
   </div>
 </div>
 
-<label>Location of Gravestone Marker:</label>
+<!-- Location of grave options buttons -->
+<label>Location of Grave Marker:</label>
 <p>(Description)</p>
 <div id="markerLocation" name="markerLocation">
   <div class="radio">
@@ -135,6 +144,7 @@
   </div>
 </div>
 
+<!-- Burial type options buttons -->
 <label>What will you be buried in?</label>
 <p>(Description)</p>
 <div id="markerLocation" name="markerLocation">
@@ -155,6 +165,7 @@
   </div>
 </div>
 
+<!-- Family plot option button -->
 <label>Is this a Family Plot?</label>
 <p>(Description)</p>
 <div id="markerLocation" name="markerLocation">
@@ -170,7 +181,7 @@
   </div>
 </div>
 
-    <!-- Make a2.css accessible to this file, used for styling -->
+    <!-- Options for saving or submitting form buttons -->
     <button type="button">Save and come back later</button>
     <button type="submit">Submit Form</button>
 </form>
