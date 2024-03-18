@@ -5,19 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    *{
+    * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
       font-family: 'Times New Roman', Times, sans-serif;
     }
 
-    body{
+    body {
       margin-left: 2rem;
       font-size: 72px;
     }
 
-    input, select, button{
+    input, select, button {
       width: 50rem;
       height: 5rem;
       font-size: 72px;
@@ -51,14 +51,6 @@
 
     .radio{
       display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      gap: 2rem;
-      margin-left: 4rem;
-    }
-
-    .input-radio{
-     width: 60px;
     }
 
 
@@ -96,7 +88,7 @@
     <h2>Optional Information:</h2>
     <p>(Description)</p>
 
-    <label for="achievements">Significant TESTING CHANGES Achievements</label>
+    <label for="achievements">Significant Achievements</label>
     <input type="text" id="achievements" name="achievements">
 
     <label for="quote">Quote:</label>
@@ -119,7 +111,7 @@
     <label for="country">Country:</label>
     <input type="text" id="country" name="country">
 
-    <h2>Primary TESTING CHANGES Contact Information:</h2>
+    <h2>Primary Contact Information:</h2>
     <p>(Description)</p>
     <label for="contactName">Name:</label>
     <input type="text" id="contactName" name="contactName">
@@ -152,18 +144,18 @@
 <label>Type of Gravestone Marker:</label>
 <div id="markerType" name="markerType">
   <div class="radio">
-    <input class="input-radio" type="radio" id="type1" name="markerType" value="type1">
     <label for="type1">Type 1</label>
+    <input type="radio" id="type1" name="markerType" value="type1">
   </div>
 
   <div class="radio">
-    <input class="input-radio" type="radio" id="type2" name="markerType" value="type2">
     <label for="type2">Type 2</label>
+    <input type="radio" id="type2" name="markerType" value="type2">
   </div>
 
   <div class="radio">
-    <input class="input-radio" type="radio" id="type3" name="markerType" value="type3">
     <label for="type3">Type 3</label>
+    <input type="radio" id="type3" name="markerType" value="type3">
   </div>
 </div>
 
@@ -171,19 +163,19 @@
 <p>(Description)</p>
 <div id="markerLocation" name="markerLocation">
   <div class="radio">
-    <input class="input-radio" type="radio" id="location1" name="markerLocation" value="location1">
     <label for="location1">Location 1</label>
+    <input type="radio" id="location1" name="markerLocation" value="location1">
   </div>
 
   <div class="radio">
 
-    <input class="input-radio" type="radio" id="location2" name="markerLocation" value="location2">
     <label for="location2">Location 2</label>
+    <input type="radio" id="location2" name="markerLocation" value="location2">
   </div>
 
   <div class="radio">
-    <input class="input-radio" type="radio" id="location3" name="markerLocation" value="location3">
     <label for="location3">Location 3</label>
+    <input type="radio" id="location3" name="markerLocation" value="location3">
   </div>
 </div>
 
@@ -191,33 +183,34 @@
 <p>(Description)</p>
 <div id="markerLocation" name="markerLocation">
   <div class="radio">
-    <input class="input-radio" type="radio" id="location1" name="burialType" value="location1">
     <label for="location1">Box 1</label>
+    <input type="radio" id="location1" name="markerLocation" value="location1">
   </div>
 
   <div class="radio">
 
-    <input class="input-radio" type="radio" id="location2" name="burialType" value="location2">
     <label for="location2">Box 2</label>
+    <input type="radio" id="location2" name="markerLocation" value="location2">
   </div>
 
   <div class="radio">
-    <input class="input-radio" type="radio" id="location3" name="burialType" value="location3">
     <label for="location3">Box 3</label>
+    <input type="radio" id="location3" name="markerLocation" value="location3">
   </div>
 </div>
 
-<label>Is this a Testing Changes Family Plot?</label>
+<label>Is this a Family Plot?</label>
 <p>(Description)</p>
 <div id="markerLocation" name="markerLocation">
   <div class="radio">
-    <input class="input-radio" type="radio" id="location1" name="familyPlot" value="location1">
     <label for="location1">Yes</label>
+    <input type="radio" id="location1" name="markerLocation" value="location1">
   </div>
 
   <div class="radio">
-    <input class="input-radio" type="radio" id="location2" name="familyPlot" value="location2">
+
     <label for="location2">No</label>
+    <input type="radio" id="location2" name="markerLocation" value="location2">
   </div>
 </div>
 
