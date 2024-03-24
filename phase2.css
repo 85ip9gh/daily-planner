@@ -9,19 +9,19 @@
 
   body{
     margin-left: 2rem;
-    font-size: 12rem;
+    font-size: 6rem;
   }
 
   input, select, button{
     width: 50rem;
-    height: 5rem;
-    font-size: 12rem;
+    height: 6rem;
+    font-size: 6rem;
     margin-bottom: 10rem;
   }
 
   select{
     background-color: gray;
-    font-size: 12rem;
+    font-size: 6rem;
   }
 
   .form-container {
@@ -29,7 +29,7 @@
       flex-direction: column;
   }
   .form-container label, .form-container input, .form-container select, .form-container button {
-      margin-bottom: 2.5rem;
+      margin-bottom: 2rem;
   }
 
   .title{
