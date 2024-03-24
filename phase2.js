@@ -24,6 +24,31 @@ function saveToBrowser() {
     localStorage.setItem('formData', JSON.stringify(formObject));
 }
 
+/* 
+   The purpose of this file is to define the function to toggle dark mode.
+
+   Author: Terry
+*/
+
+// used to indicate whether the current display state
+// is dark mode (even) or light mode (odd)
+// Special note: the value of this variable is persistent
+// because it has global scope
+
+let evenIsDarkMode = 0; 
+
+function toggleDarkMode() {
+    // test whether evenIsDarkMode is an even or odd number
+    if (evenIsDarkMode % 2 == 0){
+        document.getElementById("main").classList.remove('dark');
+    } else {
+        document.getElementById("main").classList.add('dark');
+    }
+    // increment evenIsDarkMode so its even or odd value is synchronized with
+    // the current display state
+    evenIsDarkMode++;
+}
+
 /**
  * Function for on click of "Submit button"
  */
