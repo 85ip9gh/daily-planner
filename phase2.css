@@ -1,11 +1,4 @@
-/*
-    The purpose of this file is to provide styling for Phase 1 of the
-    Naturial Burial Project
 
-    Author(s): Daniel Amirault, Pesanth Janaseth Rangaswamy Anitha, Zachary Ivanoff, Susan Macinnis 
-*/
-
-/******* html tags style ******/
 
 *{
     margin: 0;
@@ -14,38 +7,30 @@
     font-family: 'Times New Roman', Times, sans-serif;
   }
 
-
   body{
     margin-left: 2rem;
-    font-size: 72px;
+    font-size: 12rem;
   }
-
 
   input, select, button{
     width: 50rem;
     height: 5rem;
-    font-size: 72px;
+    font-size: 12rem;
     margin-bottom: 10rem;
   }
 
-
   select{
     background-color: gray;
-    font-size: 72px;
+    font-size: 12rem;
   }
-
-/******* classes for style definition  ******/
 
   .form-container {
       display: flex;
       flex-direction: column;
   }
-
-
   .form-container label, .form-container input, .form-container select, .form-container button {
-      margin-bottom: 10px;
+      margin-bottom: 2.5rem;
   }
-
 
   .title{
     font-size: 10rem;
@@ -54,6 +39,10 @@
     font-weight: bold;
   }
 
+  #markerLocation, #markerType{
+    display: flex;
+    flex-direction: column;
+  }
 
   .radio{
     display: flex;
@@ -64,11 +53,5 @@
   }
 
   .input-radio{
-   width: 60px;
+   width: 15rem;
   }
-
-/******* ids  ******/
-#markerLocation, #markerType{
-  display: flex;
-  flex-direction: column;
-}

@@ -10,15 +10,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Natural Burial</title>
-  <!-- Link the minimal CSS style sheet for readability-->
-  <link rel="stylesheet" href="phase1.css">
-</head>
+  <!-- Adds Tailwind Play CDN script 
+       Note (CDN) can be Content Delivery Network or Content Distribution Network
+  -->
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 
+  <!-- Adds css styling to page -->
+  <link rel="stylesheet" href="phase2.css">
+</head>
 <body>
   <p class="title">Natural Burial Form</p>
-  <!-- Form container -->
   <form class="form-container">
-    <!-- Name field -->
     <h2>Personal Information:</h2>
     <label for="firstName">First Name:</label>
     <input type="text" id="firstName" name="firstName">
@@ -36,7 +38,6 @@
       <label for="dob">Year(YYYY):</label>
       <input type="text" id="dob" name="dob">
 
-      <!-- Contact information field -->
       <h2>Contact Information:</h2>
       <p>(Description)</p>
 
@@ -46,7 +47,6 @@
     <label for="phone">Phone Number:</label>
     <input type="tel" id="phone" name="phone">
 
-    <!-- Optional info field -->
     <h2>Optional Information:</h2>
     <p>(Description)</p>
 
@@ -56,7 +56,6 @@
     <label for="quote">Quote:</label>
     <input type="text" id="quote" name="quote">
 
-    <!-- Address field -->
     <h2>Address:</h2>
     <p>(Description)</p>
     <label for="address">Address:</label>
@@ -74,7 +73,6 @@
     <label for="country">Country:</label>
     <input type="text" id="country" name="country">
 
-    <!-- Primary contact info field -->
     <h2>Primary Contact Information:</h2>
     <p>(Description)</p>
     <label for="contactName">Name:</label>
@@ -86,7 +84,6 @@
     <label for="contactPhone">Phone Number:</label>
     <input type="tel" id="contactPhone" name="contactPhone">
 
-    <!-- COntact address field -->
     <h2>Contact Address:</h2>
     <p>(Description)</p>
     <label for="contactAddress">Address:</label>
@@ -103,11 +100,10 @@
 
     <label for="contactCountry">Country:</label>
     <input type="text" id="contactCountry" name="contactCountry">
-        
-    <!-- Grave options buttons -->
-    <h2>Grave Marker:</h2>
+
+    <h2>Gravestone Marker:</h2>
 <p>(Description)</p>
-<label>Type of Grave Marker:</label>
+<label>Type of Gravestone Marker:</label>
 <div id="markerType" name="markerType">
   <div class="radio">
     <input class="input-radio" type="radio" id="type1" name="markerType" value="type1">
@@ -125,8 +121,7 @@
   </div>
 </div>
 
-<!-- Location of grave options buttons -->
-<label>Location of Grave Marker:</label>
+<label>Location of Gravestone Marker:</label>
 <p>(Description)</p>
 <div id="markerLocation" name="markerLocation">
   <div class="radio">
@@ -146,44 +141,42 @@
   </div>
 </div>
 
-<!-- Burial type options buttons -->
 <label>What will you be buried in?</label>
 <p>(Description)</p>
 <div id="markerLocation" name="markerLocation">
   <div class="radio">
-    <input class="input-radio" type="radio" id="location1" name="burial" value="location1">
+    <input class="input-radio" type="radio" id="location1" name="markerLocation" value="location1">
     <label for="location1">Box 1</label>
   </div>
 
   <div class="radio">
 
-    <input class="input-radio" type="radio" id="location2" name="burial" value="location2">
+    <input class="input-radio" type="radio" id="location2" name="markerLocation" value="location2">
     <label for="location2">Box 2</label>
   </div>
 
   <div class="radio">
-    <input class="input-radio" type="radio" id="location3" name="burial" value="location3">
+    <input class="input-radio" type="radio" id="location3" name="markerLocation" value="location3">
     <label for="location3">Box 3</label>
   </div>
 </div>
 
-<!-- Family plot option button -->
 <label>Is this a Family Plot?</label>
 <p>(Description)</p>
 <div id="markerLocation" name="markerLocation">
   <div class="radio">
-    <input class="input-radio" type="radio" id="location1" name="Family" value="location1">
+    <input class="input-radio" type="radio" id="location1" name="markerLocation" value="location1">
     <label for="location1">Yes</label>
   </div>
 
   <div class="radio">
 
-    <input class="input-radio" type="radio" id="location2" name="Family" value="location2">
+    <input class="input-radio" type="radio" id="location2" name="markerLocation" value="location2">
     <label for="location2">No</label>
   </div>
 </div>
 
-    <!-- Options for saving or submitting form buttons -->
+    <!-- Make a2.css accessible to this file, used for styling -->
     <button type="button">Save and come back later</button>
     <button type="submit">Submit Form</button>
 </form>
