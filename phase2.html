@@ -15,6 +15,9 @@
   -->
   <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 
+  <!-- Adds JS file to store object to page-->
+  <script src="./phase2.js"></script>
+
   <!-- Adds css styling to page -->
   <link rel="stylesheet" href="phase2.css">
 </head>
@@ -145,18 +148,18 @@
 <p>(Description)</p>
 <div id="markerLocation" name="markerLocation">
   <div class="radio">
-    <input class="input-radio" type="radio" id="location1" name="markerLocation" value="location1">
+    <input class="input-radio" type="radio" id="location1" name="burial" value="location1">
     <label for="location1">Box 1</label>
   </div>
 
   <div class="radio">
 
-    <input class="input-radio" type="radio" id="location2" name="markerLocation" value="location2">
+    <input class="input-radio" type="radio" id="location2" name="burial" value="location2">
     <label for="location2">Box 2</label>
   </div>
 
   <div class="radio">
-    <input class="input-radio" type="radio" id="location3" name="markerLocation" value="location3">
+    <input class="input-radio" type="radio" id="location3" name="burial" value="location3">
     <label for="location3">Box 3</label>
   </div>
 </div>
@@ -165,19 +168,19 @@
 <p>(Description)</p>
 <div id="markerLocation" name="markerLocation">
   <div class="radio">
-    <input class="input-radio" type="radio" id="location1" name="markerLocation" value="location1">
+    <input class="input-radio" type="radio" id="location1" name="Family" value="location1">
     <label for="location1">Yes</label>
   </div>
 
   <div class="radio">
 
-    <input class="input-radio" type="radio" id="location2" name="markerLocation" value="location2">
+    <input class="input-radio" type="radio" id="location2" name="Family" value="location2">
     <label for="location2">No</label>
   </div>
 </div>
 
     <!-- Make a2.css accessible to this file, used for styling -->
-    <button type="button">Save and come back later</button>
+    <button onclick=saveToBrowser() type="button">Save and come back later</button>
     <button type="submit">Submit Form</button>
 </form>
 </body>
