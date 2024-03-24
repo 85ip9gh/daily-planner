@@ -6,6 +6,7 @@
 -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,172 +14,186 @@
   <!-- Adds Tailwind Play CDN script 
        Note (CDN) can be Content Delivery Network or Content Distribution Network
   -->
-  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Adds css styling to page -->
+  <!-- add custom css -->
   <link rel="stylesheet" href="phase2.css">
+
 </head>
-<body>
-  <p class="title">Natural Burial Form</p>
-  <form class="form-container">
+
+<body class="ml-8 text-4xl">
+  <p class="text-7xl text-center font-bold mb-8">Natural Burial Form</p>
+  <form class="form-container flex flex-col mb-[2rem]">
     <h2>Personal Information:</h2>
     <label for="firstName">First Name:</label>
-    <input type="text" id="firstName" name="firstName">
+    <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black" type="text" name="firstName">
 
     <label for="lastName">Last Name:</label>
-    <input type="text" id="lastName" name="lastName">
+    <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black" type="text" name="lastName">
+    <h2>Date of Birth</h2>
+    <label for="dob">Month(MM):</label>
+    <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black"
+      class="w-[50rem] h-[6rem] text-4xl mb-[10rem]" type="text" name="dob">
 
-      <h2>Date of Birth</h2>
-      <label for="dob">Month(MM):</label>
-      <input type="text" id="dob" name="dob">
-      
-      <label for="dob">Day(DD):</label>
-      <input type="text" id="dob" name="dob">
-      
-      <label for="dob">Year(YYYY):</label>
-      <input type="text" id="dob" name="dob">
+    <label for="dob">Day(DD):</label>
+    <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black" type="text" name="dob">
 
-      <h2>Contact Information:</h2>
-      <p>(Description)</p>
+    <label for="dob">Year(YYYY):</label>
+    <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black" type="text" name="dob">
+
+    <h2>Contact Information:</h2>
+    <p>(Description)</p>
 
     <label for="email">Email:</label>
-    <input type="email" id="email" name="email">
+    <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black" type="email" name="email">
 
     <label for="phone">Phone Number:</label>
-    <input type="tel" id="phone" name="phone">
+    <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black" type="tel" name="phone">
 
     <h2>Optional Information:</h2>
     <p>(Description)</p>
 
     <label for="achievements">Significant Achievements</label>
-    <input type="text" id="achievements" name="achievements">
+    <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black" type="text" name="achievements">
 
     <label for="quote">Quote:</label>
-    <input type="text" id="quote" name="quote">
+    <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black" type="text" name="quote">
 
     <h2>Address:</h2>
     <p>(Description)</p>
     <label for="address">Address:</label>
-    <input type="text" id="address" name="address">
+    <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black" type="text" name="address">
 
     <label for="city">City:</label>
-    <input type="text" id="city" name="city">
+    <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black" type="text" name="city">
 
     <label for="postalCode">Postal Code:</label>
-    <input type="text" id="postalCode" name="postalCode">
+    <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black" type="text" name="postalCode">
 
     <label for="province">Province:</label>
-    <input type="text" id="province" name="province">
+    <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black" type="text" name="province">
 
     <label for="country">Country:</label>
-    <input type="text" id="country" name="country">
+    <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black" type="text" name="country">
 
     <h2>Primary Contact Information:</h2>
     <p>(Description)</p>
     <label for="contactName">Name:</label>
-    <input type="text" id="contactName" name="contactName">
+    <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black" type="text" name="contactName">
 
     <label for="contactEmail">Email:</label>
-    <input type="email" id="contactEmail" name="contactEmail">
+    <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black" type="email" name="contactEmail">
 
     <label for="contactPhone">Phone Number:</label>
-    <input type="tel" id="contactPhone" name="contactPhone">
+    <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black" type="tel" name="contactPhone">
 
     <h2>Contact Address:</h2>
     <p>(Description)</p>
     <label for="contactAddress">Address:</label>
-    <input type="text" id="contactAddress" name="contactAddress">
+    <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black" type="text" name="contactAddress">
 
     <label for="contactCity">City:</label>
-    <input type="text" id="contactCity" name="contactCity">
+    <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black" type="text" name="contactCity">
 
     <label for="contactPostalCode">Postal Code:</label>
-    <input type="text" id="contactPostalCode" name="contactPostalCode">
+    <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black" type="text" name="contactPostalCode">
 
     <label for="contactProvince">Province:</label>
-    <input type="text" id="contactProvince" name="contactProvince">
+    <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black" type="text" name="contactProvince">
 
     <label for="contactCountry">Country:</label>
-    <input type="text" id="contactCountry" name="contactCountry">
+    <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black" type="text" name="contactCountry">
 
-    <h2>Gravestone Marker:</h2>
-<p>(Description)</p>
-<label>Type of Gravestone Marker:</label>
-<div id="markerType" name="markerType">
-  <div class="radio">
-    <input class="input-radio" type="radio" id="type1" name="markerType" value="type1">
-    <label for="type1">Type 1</label>
-  </div>
+    <h2>Grave Marker:</h2>
+    <p>(Description)</p>
+    <label>Type of Grave Marker:</label>
+    <div name="markerType">
+      <div class="flex items-center justify-start gap-[2rem] ml-[4rem]">
+        <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black w-[15rem]" type="radio"
+          name="markerType" value="type1">
+        <label for="type1">Type 1</label>
+      </div>
 
-  <div class="radio">
-    <input class="input-radio" type="radio" id="type2" name="markerType" value="type2">
-    <label for="type2">Type 2</label>
-  </div>
+      <div class="flex items-center justify-start gap-[2rem] ml-[4rem]">
+        <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black w-[15rem]" class="input-radio"
+          type="radio" name="markerType" value="type2">
+        <label for="type2">Type 2</label>
+      </div>
 
-  <div class="radio">
-    <input class="input-radio" type="radio" id="type3" name="markerType" value="type3">
-    <label for="type3">Type 3</label>
-  </div>
-</div>
+      <div class="flex items-center justify-start gap-[2rem] ml-[4rem]">
+        <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black w-[15rem]" class="input-radio"
+          type="radio" name="markerType" value="type3">
+        <label for="type3">Type 3</label>
+      </div>
+    </div>
 
-<label>Location of Gravestone Marker:</label>
-<p>(Description)</p>
-<div id="markerLocation" name="markerLocation">
-  <div class="radio">
-    <input class="input-radio" type="radio" id="location1" name="markerLocation" value="location1">
-    <label for="location1">Location 1</label>
-  </div>
+    <label>Location of Grave Marker:</label>
+    <p>(Description)</p>
+    <div class="flex flex-col" name="markerLocation">
+      <div class="flex items-center justify-start gap-[2rem] ml-[4rem]">
+        <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black w-[15rem]" class="input-radio"
+          type="radio" name="markerLocation" value="location1">
+        <label for="location1">Location 1</label>
+      </div>
 
-  <div class="radio">
+      <div class="flex items-center justify-start gap-[2rem] ml-[4rem]">
 
-    <input class="input-radio" type="radio" id="location2" name="markerLocation" value="location2">
-    <label for="location2">Location 2</label>
-  </div>
+        <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black w-[15rem]" class="input-radio"
+          type="radio" name="markerLocation" value="location2">
+        <label for="location2">Location 2</label>
+      </div>
 
-  <div class="radio">
-    <input class="input-radio"type="radio" id="location3" name="markerLocation" value="location3">
-    <label for="location3">Location 3</label>
-  </div>
-</div>
+      <div class="flex items-center justify-start gap-[2rem] ml-[4rem]">
+        <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black w-[15rem]" class="input-radio"
+          type="radio" name="markerLocation" value="location3">
+        <label for="location3">Location 3</label>
+      </div>
+    </div>
 
-<label>What will you be buried in?</label>
-<p>(Description)</p>
-<div id="markerLocation" name="markerLocation">
-  <div class="radio">
-    <input class="input-radio" type="radio" id="location1" name="markerLocation" value="location1">
-    <label for="location1">Box 1</label>
-  </div>
+    <label>What will you be buried in?</label>
+    <p>(Description)</p>
+    <div class="flex flex-col" name="markerLocation">
+      <div class="flex items-center justify-start gap-[2rem] ml-[4rem]">
+        <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black w-[15rem]" class="input-radio"
+          type="radio" name="burialBox" value="location1">
+        <label for="location1">Box 1</label>
+      </div>
 
-  <div class="radio">
+      <div class="flex items-center justify-start gap-[2rem] ml-[4rem]">
 
-    <input class="input-radio" type="radio" id="location2" name="markerLocation" value="location2">
-    <label for="location2">Box 2</label>
-  </div>
+        <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black w-[15rem]" class="input-radio"
+          type="radio" name="burialBox" value="location2">
+        <label for="location2">Box 2</label>
+      </div>
 
-  <div class="radio">
-    <input class="input-radio" type="radio" id="location3" name="markerLocation" value="location3">
-    <label for="location3">Box 3</label>
-  </div>
-</div>
+      <div class="flex items-center justify-start gap-[2rem] ml-[4rem]">
+        <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black w-[15rem]" class="input-radio"
+          type="radio" name="burialBox" value="location3">
+        <label for="location3">Box 3</label>
+      </div>
+    </div>
 
-<label>Is this a Family Plot?</label>
-<p>(Description)</p>
-<div id="markerLocation" name="markerLocation">
-  <div class="radio">
-    <input class="input-radio" type="radio" id="location1" name="markerLocation" value="location1">
-    <label for="location1">Yes</label>
-  </div>
+    <label>Is this a Family Plot?</label>
+    <p>(Description)</p>
+    <div class="flex flex-col" name="markerLocation">
+      <div class="flex items-center justify-start gap-[2rem] ml-[4rem]">
+        <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black w-[15rem]" class="input-radio"
+          type="radio" name="family" value="location1">
+        <label for="location1">Yes</label>
+      </div>
 
-  <div class="radio">
+      <div class="flex items-center justify-start gap-[2rem] ml-[4rem]">
 
-    <input class="input-radio" type="radio" id="location2" name="markerLocation" value="location2">
-    <label for="location2">No</label>
-  </div>
-</div>
+        <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black w-[15rem]" class="input-radio"
+          type="radio" name="family" value="location2">
+        <label for="location2">No</label>
+      </div>
+    </div>
 
     <!-- Make a2.css accessible to this file, used for styling -->
-    <button type="button">Save and come back later</button>
-    <button type="submit">Submit Form</button>
-</form>
+    <button class="w-[50rem] h-[6rem] text-4xl mb-[10rem] bg-green-300" type="button">Save and come back later</button>
+    <button class="w-[50rem] h-[6rem] text-4xl mb-[10rem] bg-red-300" type="submit">Submit Form</button>
+  </form>
 </body>
+
 </html>
