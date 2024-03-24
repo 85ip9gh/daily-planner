@@ -16,6 +16,9 @@
   -->
   <script src="https://cdn.tailwindcss.com"></script>
 
+  <!-- Adds JS file to store object to page-->
+  <script src="./phase2.js"></script>
+
   <!-- add custom css -->
   <link rel="stylesheet" href="phase2.css">
 
@@ -191,7 +194,7 @@
     </div>
 
     <!-- Make a2.css accessible to this file, used for styling -->
-    <button class="w-[50rem] h-[6rem] text-4xl mb-[10rem] bg-green-300" type="button">Save and come back later</button>
+    <button onclick=saveToBrowser() class="w-[50rem] h-[6rem] text-4xl mb-[10rem] bg-green-300" type="button">Save and come back later</button>
     <button class="w-[50rem] h-[6rem] text-4xl mb-[10rem] bg-red-300" type="submit">Submit Form</button>
   </form>
 </body>
