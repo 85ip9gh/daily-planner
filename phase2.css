@@ -1,8 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, sans-serif;
+}
 
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Times New Roman', Times, sans-serif;
+@layer utilities {
+  .content-auto {
+    /* optomizes page rendering by avoiding unnecessary rendering of content 
+        the user does not immediately need */
+    content-visibility: auto;
   }
+}

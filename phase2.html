@@ -24,7 +24,10 @@
 
 </head>
 
-<body class="ml-8 text-4xl">
+<body class="ml-8 text-4xl dark:bg-gray-700 dark:text-white">
+  <div class="w-100% flex justify-end">
+    <button onclick="toggleDarkMode()" class="text-7xl bg-gray-700 dark:bg-white fixed m-5 p-2 rounded dark:text-black text-white">Toggle Dark Mode</button>
+  </div>
   <p class="text-7xl text-center font-bold mb-8">Natural Burial Form</p>
   <form class="form-container flex flex-col mb-[2rem]">
     <h2>Personal Information:</h2>
@@ -194,8 +197,8 @@
     </div>
 
     <!-- Make a2.css accessible to this file, used for styling -->
-    <button onclick=saveToBrowser() class="w-[50rem] h-[6rem] text-4xl mb-[10rem] bg-green-300" type="button">Save and come back later</button>
-    <button class="w-[50rem] h-[6rem] text-4xl mb-[10rem] bg-red-300" type="submit">Submit Form</button>
+    <button onclick=saveToBrowser() class="w-[50rem] h-[6rem] text-4xl mb-[10rem] bg-green-300 dark:text-black" type="button">Save and come back later</button>
+    <button class="w-[50rem] h-[6rem] text-4xl mb-[10rem] bg-red-300 dark:text-black" type="submit">Submit Form</button>
   </form>
 </body>
 
