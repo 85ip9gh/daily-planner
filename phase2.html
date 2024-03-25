@@ -16,8 +16,11 @@
   -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Adds JS file to store object to page-->
+  <!-- Adds JS file to store object to page and toggle dark mode-->
   <script src="./phase2.js"></script>
+
+  <!-- Adds JS file to customize tailwind configuration -->
+  <script src="./tailwind.config.js"></script>
 
   <!-- add custom css -->
   <link rel="stylesheet" href="phase2.css">
@@ -26,7 +29,7 @@
 
 <body class="ml-8 text-4xl dark:bg-gray-700 dark:text-white">
   <div class="w-100% flex justify-end">
-    <button onclick="toggleDarkMode()" class="bg-gray-700 dark:bg-white fixed m-5 p-2 rounded dark:text-black text-white">Toggle Dark Mode</button>
+    <button onclick="toggleDarkMode()" class="bg-gray-700 dark:bg-white fixed m-5 p-2 w-[16rem] h-16 rounded dark:text-black text-white">Dark Mode</button>
   </div>
   <p class="text-7xl text-center font-bold mb-8">Natural Burial Form</p>
   <form class="form-container flex flex-col mb-[2rem]">

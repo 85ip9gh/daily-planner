@@ -49,14 +49,10 @@ function toggleDarkMode() {
     if (DarkMode == 0){
         document.getElementsByTagName("body")[0].classList.remove('dark');
         DarkMode = 1;
-        console.log("DarkMode");
+        document.getElementsByTagName("button")[0].innerHTML = "Dark Mode";
       } else {
         document.getElementsByTagName("body")[0].classList.add('dark');
         DarkMode = 0;
-        console.log("LightMode");
+        document.getElementsByTagName("button")[0].innerHTML = "Light Mode";
     }
-}
-
-tailwind.config = {
-  darkMode: 'selector',
 }
