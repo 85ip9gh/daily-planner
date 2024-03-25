@@ -27,181 +27,265 @@
 
 </head>
 
-<body class="ml-8 text-4xl dark:bg-gray-700 dark:text-white">
+<body class="ml-8 text-[6rem] dark:bg-gray-700 dark:text-white w-full max-w-lvw">
   <div class="w-100% flex justify-end">
-    <button onclick="toggleDarkMode()" class="bg-gray-700 dark:bg-white fixed m-5 p-2 w-[16rem] h-16 rounded dark:text-black text-white">Dark Mode</button>
+    <button onclick="toggleDarkMode()"
+      class="bg-gray-700 dark:bg-white m-5 p-2 w-[32rem] h-[16rem] rounded dark:text-black text-white">Dark
+      Mode</button>
   </div>
-  <p class="text-7xl text-center font-bold mb-8">Natural Burial Form</p>
+  <p class="text-[6rem] text-center font-bold mb-8">Natural Burial Form</p>
+  <audio controls></audio>
   <form class="form-container flex flex-col mb-[2rem]">
     <h2>Personal Information:</h2>
-    <label for="firstName">First Name:</label>
-    <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black" type="text" name="firstName">
+    <div class="flex items-center mb-[10rem] gap-[2rem]">
+      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full"></div>
+      <label for="firstName">Name:</label>
+      <input class="w-[40rem] h-[6rem] text-4xl border-2 border-black" type="text" name="firstName">
+    </div>
 
-    <label for="lastName">Last Name:</label>
-    <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black" type="text" name="lastName">
-    <h2>Date of Birth</h2>
-    <label for="dob">Month(MM):</label>
-    <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black"
-      class="w-[50rem] h-[6rem] text-4xl mb-[10rem]" type="text" name="dob">
+    <h2>Date of Birth:</h2>
+    <div class="flex items-center mb-[10rem] gap-[2rem]">
+      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full"></div>
+      <label for="dob">Month:</label>
+      <input class="w-[30rem] h-[6rem] text-4xl border-2 border-black"
+        class="w-[30rem] h-[6rem] text-4xl mb-[10rem]" type="text" name="dob">
+    </div>
 
-    <label for="dob">Day(DD):</label>
-    <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black" type="text" name="dob">
+    <div class="flex items-center mb-[10rem] gap-[2rem]">
+      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full"></div>
+      <label for="dob">Day:</label>
+      <input class="w-[30rem] h-[6rem] text-4xl border-2 border-black" type="text" name="dob">
+    </div>
 
-    <label for="dob">Year(YYYY):</label>
-    <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black" type="text" name="dob">
+    <div class="flex items-center mb-[10rem] gap-[2rem]">
+      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full"></div>
+      <label for="dob">Year:</label>
+      <input class="w-[30rem] h-[6rem] text-4xl border-2 border-black" type="text" name="dob">
+    </div>
 
-    <h2>Contact Information:</h2>
+    <h2>Contact:</h2>
     <p>(Description)</p>
 
-    <label for="email">Email:</label>
-    <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black" type="email" name="email">
+    <div class="flex items-center mb-[10rem] gap-[2rem]">
+      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full"></div>
+      <label for="email">Email:</label>
+      <input class="w-[30rem] h-[6rem] text-4xl border-2 border-black" type="email" name="email">
+    </div>
 
-    <label for="phone">Phone Number:</label>
-    <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black" type="tel" name="phone">
+    <div class="flex items-center mb-[10rem] gap-[2rem]">
+      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full"></div>
+      <label for="phone">Phone:</label>
+      <input class="w-[30rem] h-[6rem] text-4xl border-2 border-black" type="tel" name="phone">
+    </div>
 
-    <h2>Optional Information:</h2>
+    <h2>Optional:</h2>
     <p>(Description)</p>
+    <div class="flex items-center mb-[10rem] gap-[2rem]">
+      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full"></div>
+      <label for="feats">Feats</label>
+      <input class="w-[30rem] h-[6rem] text-4xl border-2 border-black" type="text" name="achievements">
+    </div>
 
-    <label for="achievements">Significant Achievements</label>
-    <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black" type="text" name="achievements">
-
-    <label for="quote">Quote:</label>
-    <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black" type="text" name="quote">
+    <div class="flex items-center mb-[10rem] gap-[2rem]">
+      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full"></div>
+      <label for="quote">Quote:</label>
+      <input class="w-[30rem] h-[6rem] text-4xl border-2 border-black" type="text" name="quote">
+    </div>
 
     <h2>Address:</h2>
     <p>(Description)</p>
-    <label for="address">Address:</label>
-    <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black" type="text" name="address">
 
-    <label for="city">City:</label>
-    <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black" type="text" name="city">
+    <div class="flex items-center mb-[10rem] gap-[2rem]">
+      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full"></div>
+      <label for="address">Address:</label>
+      <input class="w-[30rem] h-[6rem] text-4xl border-2 border-black" type="text" name="address">
+    </div>
 
-    <label for="postalCode">Postal Code:</label>
-    <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black" type="text" name="postalCode">
 
-    <label for="province">Province:</label>
-    <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black" type="text" name="province">
+    <div class="flex items-center mb-[10rem] gap-[2rem]">
+      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full"></div>
+      <label for="city">City:</label>
+      <input class="w-[30rem] h-[6rem] text-4xl border-2 border-black" type="text" name="city">
+    </div>
 
-    <label for="country">Country:</label>
-    <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black" type="text" name="country">
+    <div class="flex items-center mb-[10rem] gap-[2rem]">
+      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full"></div>
+      <label for="postalCode">Postal:</label>
+      <input class="w-[30rem] h-[6rem] text-4xl border-2 border-black" type="text" name="postalCode">
+    </div>
 
-    <h2>Primary Contact Information:</h2>
+    <div class="flex items-center mb-[10rem] gap-[2rem]">
+      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full"></div>
+      <label for="province">Province:</label>
+      <input class="w-[30rem] h-[6rem] text-4xl border-2 border-black" type="text" name="province">
+    </div>
+
+    <div class="flex items-center mb-[10rem] gap-[2rem]">
+      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full"></div>
+      <label for="country">Country:</label>
+      <input class="w-[30rem] h-[6rem] text-4xl border-2 border-black" type="text" name="country">
+    </div>
+
+    
+    <h2>Primary Contact:</h2>
     <p>(Description)</p>
-    <label for="contactName">Name:</label>
-    <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black" type="text" name="contactName">
+    
+    <div class="flex items-center mb-[10rem] gap-[2rem]">
+      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full"></div>
+      <label for="contactName">Name:</label>
+      <input class="w-[30rem] h-[6rem] text-4xl border-2 border-black" type="text" name="contactName">
+    </div>
 
-    <label for="contactEmail">Email:</label>
-    <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black" type="email" name="contactEmail">
+    <div class="flex items-center mb-[10rem] gap-[2rem]">
+      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full"></div>
+      <label for="contactEmail">Email:</label>
+      <input class="w-[30rem] h-[6rem] text-4xl border-2 border-black" type="email" name="contactEmail">
+    </div>
 
-    <label for="contactPhone">Phone Number:</label>
-    <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black" type="tel" name="contactPhone">
+    <div class="flex items-center mb-[10rem] gap-[2rem]">
+      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full"></div>
+      <label for="contactPhone">Phone:</label>
+      <input class="w-[30rem] h-[6rem] text-4xl border-2 border-black" type="tel" name="contactPhone">
+    </div>
 
     <h2>Contact Address:</h2>
     <p>(Description)</p>
-    <label for="contactAddress">Address:</label>
-    <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black" type="text" name="contactAddress">
+    
+    <div class="flex items-center mb-[10rem] gap-[2rem]">
+      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full"></div>
+      <label for="contactAddress">Address:</label>
+      <input class="w-[30rem] h-[6rem] text-4xl border-2 border-black" type="text" name="contactAddress">
+    </div>
 
-    <label for="contactCity">City:</label>
-    <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black" type="text" name="contactCity">
+    <div class="flex items-center mb-[10rem] gap-[2rem]">
+      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full"></div>
+      <label for="contactCity">City:</label>
+      <input class="w-[30rem] h-[6rem] text-4xl border-2 border-black" type="text" name="contactCity">
+    </div>
 
-    <label for="contactPostalCode">Postal Code:</label>
-    <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black" type="text" name="contactPostalCode">
+    <div class="flex items-center mb-[10rem] gap-[2rem]">
+      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full"></div>
+      <label for="contactPostalCode">Postal:</label>
+      <input class="w-[30rem] h-[6rem] text-4xl border-2 border-black" type="text" name="contactPostalCode">
+    </div>
 
-    <label for="contactProvince">Province:</label>
-    <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black" type="text" name="contactProvince">
 
-    <label for="contactCountry">Country:</label>
-    <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black" type="text" name="contactCountry">
+    <div class="flex items-center mb-[10rem] gap-[2rem]">
+      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full"></div>
+      <label for="contactProvince">Province:</label>
+      <input class="w-[30rem] h-[6rem] text-4xl border-2 border-black" type="text" name="contactProvince">
+    </div>
+
+
+    <div class="flex items-center mb-[10rem] gap-[2rem]">
+      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full"></div>
+      <label for="contactCountry">Country:</label>
+      <input class="w-[30rem] h-[6rem] text-4xl border-2 border-black" type="text" name="contactCountry">
+    </div>
 
     <h2>Grave Marker:</h2>
     <p>(Description)</p>
-    <label>Type of Grave Marker:</label>
+    <div class="flex items-center mb-[10rem] gap-[2rem]">
+      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full"></div>
+      <label>Type of Grave Marker:</label>
+    </div>
     <div name="markerType">
       <div class="flex items-center justify-start gap-[2rem] ml-[4rem]">
-        <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black w-[15rem]" type="radio"
+        <input class="w-[30rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black w-[5rem]" type="radio"
           name="markerType" value="type1">
         <label class="mb-[10rem]" for="type1">Type 1</label>
       </div>
 
       <div class="flex items-center justify-start gap-[2rem] ml-[4rem]">
-        <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black w-[15rem]" class="input-radio"
+        <input class="w-[30rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black w-[5rem]" class="input-radio"
           type="radio" name="markerType" value="type2">
         <label class="mb-[10rem]" for="type2">Type 2</label>
       </div>
 
       <div class="flex items-center justify-start gap-[2rem] ml-[4rem]">
-        <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black w-[15rem]" class="input-radio"
+        <input class="w-[30rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black w-[5rem]" class="input-radio"
           type="radio" name="markerType" value="type3">
         <label class="mb-[10rem]" for="type3">Type 3</label>
       </div>
     </div>
 
-    <label>Location of Grave Marker:</label>
+    <div class="flex items-center mb-[10rem] gap-[2rem]">
+      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full"></div>
+      <label>Location of Grave Marker:</label>
+    </div>
     <p>(Description)</p>
     <div class="flex flex-col" name="markerLocation">
       <div class="flex items-center justify-start gap-[2rem] ml-[4rem]">
-        <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black w-[15rem]" class="input-radio"
+        <input class="w-[30rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black w-[5rem]" class="input-radio"
           type="radio" name="markerLocation" value="location1">
         <label class="mb-[10rem]" for="location1">Location 1</label>
       </div>
 
       <div class="flex items-center justify-start gap-[2rem] ml-[4rem]">
 
-        <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black w-[15rem]" class="input-radio"
+        <input class="w-[30rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black w-[5rem]" class="input-radio"
           type="radio" name="markerLocation" value="location2">
         <label class="mb-[10rem]" for="location2">Location 2</label>
       </div>
 
       <div class="flex items-center justify-start gap-[2rem] ml-[4rem]">
-        <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black w-[15rem]" class="input-radio"
+        <input class="w-[30rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black w-[5rem]" class="input-radio"
           type="radio" name="markerLocation" value="location3">
         <label class="mb-[10rem]" for="location3">Location 3</label>
       </div>
     </div>
 
-    <label>What will you be buried in?</label>
+    <div class="flex items-center mb-[10rem] gap-[2rem]">
+      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full"></div>
+      <label>What will you be buried in?</label>
+    </div>
     <p>(Description)</p>
     <div class="flex flex-col" name="markerLocation">
       <div class="flex items-center justify-start gap-[2rem] ml-[4rem]">
-        <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black w-[15rem]" class="input-radio"
+        <input class="w-[30rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black w-[5rem]" class="input-radio"
           type="radio" name="burialBox" value="box1">
         <label class="mb-[10rem]" for="box1">Box 1</label>
       </div>
 
       <div class="flex items-center justify-start gap-[2rem] ml-[4rem]">
-
-        <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black w-[15rem]" class="input-radio"
+        <input class="w-[30rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black w-[5rem]" class="input-radio"
           type="radio" name="burialBox" value="box2">
         <label class="mb-[10rem]" for="box2">Box 2</label>
       </div>
 
       <div class="flex items-center justify-start gap-[2rem] ml-[4rem]">
-        <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black w-[15rem]" class="input-radio"
+        <input class="w-[30rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black w-[5rem]" class="input-radio"
           type="radio" name="burialBox" value="box3">
         <label class="mb-[10rem]" for="box3">Box 3</label>
       </div>
     </div>
 
-    <label>Is this a Family Plot?</label>
-    <p>(Description)</p>
+    <div class="flex items-center mb-[10rem] gap-[2rem]">
+      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full"></div>
+      <label>Is this a Family Plot?</label>
+    </div>
+      <p>(Description)</p>
     <div class="flex flex-col" name="markerLocation">
       <div class="flex items-center justify-start gap-[2rem] ml-[4rem]">
-        <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black w-[15rem]" class="input-radio"
+        <input class="w-[30rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black w-[5rem]" class="input-radio"
           type="radio" name="family" value="Yes">
         <label class="mb-[10rem]" for="Yes">Yes</label>
       </div>
 
       <div class="flex items-center justify-start gap-[2rem] ml-[4rem]">
 
-        <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black w-[15rem]" class="input-radio"
+        <input class="w-[30rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black w-[5rem]" class="input-radio"
           type="radio" name="family" value="No">
         <label class="mb-[10rem]" for="No">No</label>
       </div>
     </div>
 
-    <!-- Make a2.css accessible to this file, used for styling -->
-    <button onclick=saveToBrowser() class="w-[50rem] h-[6rem] text-4xl mb-[10rem] bg-green-300 dark:text-black" type="button">Save and come back later</button>
-    <button class="w-[50rem] h-[6rem] text-4xl mb-[10rem] bg-red-300 dark:text-black" type="submit">Submit Form</button>
+    <div class="flex justify-center gap-[4rem]">
+      <button onclick=saveToBrowser() class="w-[30rem] h-[6rem] text-4xl mb-[10rem] bg-green-300 dark:text-black"
+        type="button">Save and come back later</button>
+      <button class="w-[30rem] h-[6rem] text-4xl mb-[10rem] mr-8 bg-red-300 dark:text-black" type="submit">Submit
+        Form</button>
+    </div>
   </form>
 </body>
 
