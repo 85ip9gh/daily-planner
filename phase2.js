@@ -16,8 +16,15 @@ function saveToBrowser() {
     const inputs = document.querySelectorAll('input');
     
     inputs.forEach(function(input) {
-        formObject[input.name] = input.value;
-        console.log("key: " + input.name + " value: " + input.value);
+        if(input.type == 'radio') {
+          if (input.checked) {
+          console.log("radio key: " + input.name + " value: " + input.value);
+          formObject[input.name] = input.value;
+          }
+        } else {
+          console.log("key: " + input.name + " value: " + input.value);
+          formObject[input.name] = input.value;
+        }
     });
 
     //store the whole object into local browser storage (permanent)
