@@ -56,3 +56,17 @@ function toggleDarkMode() {
         document.getElementsByTagName("button")[0].innerHTML = "Light Mode";
     }
 }
+
+
+function playName() {
+  console.log("name audio clicked!");
+  var audio = document.querySelector('audio');
+  if (audio.paused) {
+    audio.play();
+    this.textContent = 'Playing...';
+  } else {
+    audio.pause();
+    audio.currentTime = 0;
+    this.textContent = 'Click to Play';
+  }
+}

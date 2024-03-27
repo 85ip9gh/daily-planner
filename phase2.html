@@ -34,11 +34,12 @@
       Mode</button>
   </div>
   <p class="text-[6rem] text-center font-bold mb-8">Natural Burial Form</p>
-  <audio controls></audio>
   <form class="form-container flex flex-col mb-[2rem]">
     <h2>Personal Information:</h2>
     <div class="flex items-center mb-[10rem] gap-[2rem]">
-      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full"></div>
+      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full cursor-pointer" onclick="playName()">
+        <audio src="./audio/Name.m4a"></audio>
+      </div>
       <label for="Name">Name:</label>
       <input class="w-[40rem] h-[6rem] text-4xl border-2 border-black" type="text" name="Name">
     </div>
@@ -48,19 +49,19 @@
       <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full"></div>
       <label for="dob">Month:</label>
       <input class="w-[30rem] h-[6rem] text-4xl border-2 border-black"
-        class="w-[30rem] h-[6rem] text-4xl mb-[10rem]" type="text" name="dob">
+        class="w-[30rem] h-[6rem] text-4xl mb-[10rem]" type="text" name="dobMonth">
     </div>
 
     <div class="flex items-center mb-[10rem] gap-[2rem]">
       <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full"></div>
       <label for="dob">Day:</label>
-      <input class="w-[30rem] h-[6rem] text-4xl border-2 border-black" type="text" name="dob">
+      <input class="w-[30rem] h-[6rem] text-4xl border-2 border-black" type="text" name="dobDay">
     </div>
 
     <div class="flex items-center mb-[10rem] gap-[2rem]">
       <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full"></div>
       <label for="dob">Year:</label>
-      <input class="w-[30rem] h-[6rem] text-4xl border-2 border-black" type="text" name="dob">
+      <input class="w-[30rem] h-[6rem] text-4xl border-2 border-black" type="text" name="dobYear">
     </div>
 
     <h2>Contact:</h2>
