@@ -83,6 +83,7 @@ function toggleDarkMode() {
 }
 
 
-function playAudio() {
-  document.querySelector('audio').play();
+function playAudio(element) {
+  var audio = element.querySelector('audio');
+  audio.play();
 }
