@@ -37,7 +37,7 @@
   <form class="form-container flex flex-col mb-[2rem]">
     <h2>Personal Information:</h2>
     <div class="flex items-center mb-[10rem] gap-[2rem]">
-      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full cursor-pointer" onclick="playName()">
+      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full cursor-pointer" onclick="playAudio()">
         <audio src="./audio/Name.m4a"></audio>
       </div>
       <label for="Name">Name:</label>
@@ -46,20 +46,26 @@
 
     <h2>Date of Birth:</h2>
     <div class="flex items-center mb-[10rem] gap-[2rem]">
-      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full"></div>
+      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full" onclick="playAudio()">
+        <audio src="./audio/Month.m4a"></audio>
+      </div>
       <label for="dob">Month:</label>
-      <input class="w-[30rem] h-[6rem] text-4xl border-2 border-black"
-        class="w-[30rem] h-[6rem] text-4xl mb-[10rem]" type="text" name="dobMonth">
+      <input class="w-[30rem] h-[6rem] text-4xl border-2 border-black" class="w-[30rem] h-[6rem] text-4xl mb-[10rem]"
+        type="text" name="dobMonth">
     </div>
 
     <div class="flex items-center mb-[10rem] gap-[2rem]">
-      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full"></div>
+      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full" onclick="playAudio()">
+        <audio src="./audio/Day.m4a"></audio>
+      </div>
       <label for="dob">Day:</label>
       <input class="w-[30rem] h-[6rem] text-4xl border-2 border-black" type="text" name="dobDay">
     </div>
 
     <div class="flex items-center mb-[10rem] gap-[2rem]">
-      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full"></div>
+      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full" onclick="playAudio()">
+        <audio src="./audio/Year.m4a"></audio>
+      </div>
       <label for="dob">Year:</label>
       <input class="w-[30rem] h-[6rem] text-4xl border-2 border-black" type="text" name="dobYear">
     </div>
@@ -68,13 +74,17 @@
     <p>(Description)</p>
 
     <div class="flex items-center mb-[10rem] gap-[2rem]">
-      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full"></div>
+      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full" onclick="playAudio()">
+        <audio src="./audio/Email.m4a"></audio>
+      </div>
       <label for="email">Email:</label>
       <input class="w-[30rem] h-[6rem] text-4xl border-2 border-black" type="email" name="email">
     </div>
 
     <div class="flex items-center mb-[10rem] gap-[2rem]">
-      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full"></div>
+      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full" onclick="playAudio()">
+        <audio src="./audio/Phone number.m4a"></audio>
+      </div>
       <label for="phone">Phone:</label>
       <input class="w-[30rem] h-[6rem] text-4xl border-2 border-black" type="tel" name="phone">
     </div>
@@ -82,13 +92,17 @@
     <h2>Optional:</h2>
     <p>(Description)</p>
     <div class="flex items-center mb-[10rem] gap-[2rem]">
-      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full"></div>
+      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full" onclick="playAudio()">
+        <audio src="./audio/Feats.m4a"></audio>
+      </div>
       <label for="feats">Feats</label>
       <input class="w-[30rem] h-[6rem] text-4xl border-2 border-black" type="text" name="achievements">
     </div>
 
     <div class="flex items-center mb-[10rem] gap-[2rem]">
-      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full"></div>
+      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full" onclick="playAudio()">
+        <audio src="./audio/Quotes.m4a"></audio>
+      </div>
       <label for="quote">Quote:</label>
       <input class="w-[30rem] h-[6rem] text-4xl border-2 border-black" type="text" name="quote">
     </div>
@@ -97,89 +111,115 @@
     <p>(Description)</p>
 
     <div class="flex items-center mb-[10rem] gap-[2rem]">
-      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full"></div>
+      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full" onclick="playAudio()">
+        <audio src="./audio/address.m4a"></audio>
+      </div>
       <label for="address">Address:</label>
       <input class="w-[30rem] h-[6rem] text-4xl border-2 border-black" type="text" name="address">
     </div>
 
 
     <div class="flex items-center mb-[10rem] gap-[2rem]">
-      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full"></div>
+      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full" onclick="playAudio()">
+        <audio src="./audio/City.m4a"></audio>
+      </div>
       <label for="city">City:</label>
       <input class="w-[30rem] h-[6rem] text-4xl border-2 border-black" type="text" name="city">
     </div>
 
     <div class="flex items-center mb-[10rem] gap-[2rem]">
-      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full"></div>
+      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full" onclick="playAudio()">
+        <audio src="./audio/Postal code.m4a"></audio>
+      </div>
       <label for="postalCode">Postal:</label>
       <input class="w-[30rem] h-[6rem] text-4xl border-2 border-black" type="text" name="postalCode">
     </div>
 
     <div class="flex items-center mb-[10rem] gap-[2rem]">
-      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full"></div>
+      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full" onclick="playAudio()">
+        <audio src="./audio/Province.m4a"></audio>
+      </div>
       <label for="province">Province:</label>
       <input class="w-[30rem] h-[6rem] text-4xl border-2 border-black" type="text" name="province">
     </div>
 
     <div class="flex items-center mb-[10rem] gap-[2rem]">
-      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full"></div>
+      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full" onclick="playAudio()">
+        <audio src="./audio/Country.m4a"></audio>
+      </div>
       <label for="country">Country:</label>
       <input class="w-[30rem] h-[6rem] text-4xl border-2 border-black" type="text" name="country">
     </div>
 
-    
+
     <h2>Primary Contact:</h2>
     <p>(Description)</p>
-    
+
     <div class="flex items-center mb-[10rem] gap-[2rem]">
-      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full"></div>
+      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full" onclick="playAudio()">
+        <audio src="./audio/Name.m4a"></audio>
+      </div>
       <label for="contactName">Name:</label>
       <input class="w-[30rem] h-[6rem] text-4xl border-2 border-black" type="text" name="contactName">
     </div>
 
     <div class="flex items-center mb-[10rem] gap-[2rem]">
-      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full"></div>
+      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full" onclick="playAudio()">
+        <audio src="./audio/Email.m4a"></audio>
+      </div>
       <label for="contactEmail">Email:</label>
       <input class="w-[30rem] h-[6rem] text-4xl border-2 border-black" type="email" name="contactEmail">
     </div>
 
     <div class="flex items-center mb-[10rem] gap-[2rem]">
-      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full"></div>
+      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full" onclick="playAudio()">
+        <audio src="./audio/Phone number.m4a"></audio>
+      </div>
       <label for="contactPhone">Phone:</label>
       <input class="w-[30rem] h-[6rem] text-4xl border-2 border-black" type="tel" name="contactPhone">
     </div>
 
     <h2>Contact Address:</h2>
     <p>(Description)</p>
-    
+
     <div class="flex items-center mb-[10rem] gap-[2rem]">
-      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full"></div>
+      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full" onclick="playAudio()">
+        <audio src="./audio/Address.m4a"></audio>
+      </div>
       <label for="contactAddress">Address:</label>
       <input class="w-[30rem] h-[6rem] text-4xl border-2 border-black" type="text" name="contactAddress">
     </div>
 
     <div class="flex items-center mb-[10rem] gap-[2rem]">
-      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full"></div>
+      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full" onclick="playAudio()">
+        <audio src="./audio/City.m4a"></audio>
+      </div>
       <label for="contactCity">City:</label>
       <input class="w-[30rem] h-[6rem] text-4xl border-2 border-black" type="text" name="contactCity">
     </div>
 
     <div class="flex items-center mb-[10rem] gap-[2rem]">
-      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full"></div>
+      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full" onclick="playAudio()">
+        <audio src="./audio/Postal code.m4a"></audio>
+      </div>
       <label for="contactPostalCode">Postal:</label>
       <input class="w-[30rem] h-[6rem] text-4xl border-2 border-black" type="text" name="contactPostalCode">
     </div>
 
 
     <div class="flex items-center mb-[10rem] gap-[2rem]">
-      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full"></div>
+      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full" onclick="playAudio()">
+        <audio src="./audio/Province.m4a"></audio>
+      </div>
       <label for="contactProvince">Province:</label>
       <input class="w-[30rem] h-[6rem] text-4xl border-2 border-black" type="text" name="contactProvince">
     </div>
 
 
     <div class="flex items-center mb-[10rem] gap-[2rem]">
-      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full"></div>
+      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full" onclick="playAudio()">
+        <audio src="./audio/Country.m4a"></audio>
+      </div>
       <label for="contactCountry">Country:</label>
       <input class="w-[30rem] h-[6rem] text-4xl border-2 border-black" type="text" name="contactCountry">
     </div>
@@ -187,7 +227,9 @@
     <h2>Grave Marker:</h2>
     <p>(Description)</p>
     <div class="flex items-center mb-[10rem] gap-[2rem]">
-      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full"></div>
+      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full" onclick="playAudio()">
+        <audio src="./audio/Grave marker.m4a"></audio>
+      </div>
       <label>Type of Grave Marker:</label>
     </div>
     <div name="markerType">
@@ -195,130 +237,166 @@
         <input class="w-[30rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black w-[5rem]" type="radio"
           name="markerType" value="type1">
         <label class="mb-[10rem]" for="type1">Flowers</label>
-        <img src="./images/Flower.jpg"/> 
+        <img src="./images/Flower.jpg" />
       </div>
 
       <div class="flex items-center justify-start gap-[2rem] ml-[4rem]">
-        <input class="w-[30rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black w-[5rem]" class="input-radio"
-          type="radio" name="markerType" value="type2">
-          <label class="mb-[10rem]" for="type2">Rock</label>
-          <img src="./images/rock.jpg"/> 
-
-      <div class="flex items-center justify-start gap-[2rem] ml-[4rem]">
-        <input class="w-[30rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black w-[5rem]" class="input-radio"
-          type="radio" name="markerType" value="type3">
-        <label class="mb-[10rem]" for="type3">Shrubs</label>
-        <img src="./images/shrubs.jpg"/> 
+        <input class="w-[30rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black w-[5rem]" type="radio"
+          name="markerType" value="type2">
+        <label class="mb-[10rem]" for="type2">Rock</label>
+        <img src="./images/rock.jpg" />
       </div>
 
       <div class="flex items-center justify-start gap-[2rem] ml-[4rem]">
-        <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black w-[15rem]" class="input-radio"
-          type="radio" name="markerType" value="type3">
-        <label class="mb-[10rem]" for="type3">Shrubs</label>
-        <img src="./images/shrubs.jpg"/> 
+        <div class="flex items-center justify-start gap-[2rem] ml-[4rem]">
+          <input class="w-[30rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black w-[5rem]" type="radio"
+            name="markerType" value="type3">
+          <label class="mb-[10rem]" for="type3">Shrubs</label>
+          <img src="./images/shrubs.jpg" />
+        </div>
       </div>
 
       <div class="flex items-center justify-start gap-[2rem] ml-[4rem]">
-        <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black w-[15rem]" class="input-radio"
-          type="radio" name="markerType" value="type4">
-        <label class="mb-[10rem]" for="type4">Tree</label>
-        <img src="./images/Tree.jpg"/> 
+
+        <div class="flex items-center justify-start gap-[2rem] ml-[4rem]">
+          <input class="w-[30rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black w-[5rem]" type="radio"
+            name="markerType" value="type4">
+          <label class="mb-[10rem]" for="type4">Tree</label>
+          <img src="./images/Tree.jpg" />
+        </div>
       </div>
     </div>
 
     <div class="flex items-center mb-[10rem] gap-[2rem]">
-      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full"></div>
+      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full" onclick="playAudio()">
+        <audio src="./audio/Location of Grave Marker.m4a"></audio>
+      </div>
       <label>Location of Grave Marker:</label>
     </div>
     <p>(Description)</p>
     <div class="flex flex-col" name="markerLocation">
+
       <div class="flex items-center justify-start gap-[2rem] ml-[4rem]">
+        <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full" onclick="playAudio()">
+          <audio src="./audio/Forest.m4a"></audio>
+        </div>
         <input class="w-[30rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black w-[5rem]" class="input-radio"
           type="radio" name="markerLocation" value="location1">
         <label class="mb-[10rem]" for="location1">Forest</label>
-        <img src="./images/Forest.jpg" width="400" height="500"/> 
+        <img src="./images/Forest.jpg" width="400" height="500" />
       </div>
 
       <div class="flex items-center justify-start gap-[2rem] ml-[4rem]">
-
+        <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full" onclick="playAudio()">
+          <audio src="./audio/Grove.m4a"></audio>
+        </div>
         <input class="w-[30rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black w-[5rem]" class="input-radio"
           type="radio" name="markerLocation" value="location2">
-          <label class="mb-[10rem]" for="location2">Grove</label>
-          <img src="./images/Grove.jpg" width="400" height="500"/> 
-
-      <div class="flex items-center justify-start gap-[2rem] ml-[4rem]">
-        <input class="w-[30rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black w-[5rem]" class="input-radio"
-          type="radio" name="markerLocation" value="location3">
-        <label class="mb-[10rem]" for="location3">Field</label>
-        <img src="./images/field.jpg" width="400" height="500"/> 
+        <label class="mb-[10rem]" for="location2">Grove</label>
+        <img src="./images/Grove.jpg" width="400" height="500" />
       </div>
 
       <div class="flex items-center justify-start gap-[2rem] ml-[4rem]">
-        <input class="w-[30rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black w-[5rem]" class="input-radio"
+        <div class="flex items-center justify-start gap-[2rem] ml-[4rem]">
+          <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full" onclick="playAudio()">
+            <audio src="./audio/Field.m4a"></audio>
+          </div>
+          <input class="w-[30rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black w-[5rem]" class="input-radio"
           type="radio" name="markerLocation" value="location3">
-        <label class="mb-[10rem]" for="location3">Field</label>
-        <img src="./images/field.jpg" width="400" height="500"/> 
+          <label class="mb-[10rem]" for="location3">Field</label>
+          <img src="./images/field.jpg" width="400" height="500" />
+        </div>
       </div>
-
+        
       <div class="flex items-center justify-start gap-[2rem] ml-[4rem]">
-        <input class="w-[50rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black w-[15rem]" class="input-radio"
+        <div class="flex items-center justify-start gap-[2rem] ml-[4rem]">
+          <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full" onclick="playAudio()">
+            <audio src="./audio/Name.m4a"></audio>
+          </div>
+          <input class="w-[30rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black w-[5rem]" class="input-radio"
           type="radio" name="markerLocation" value="location4">
-        <label class="mb-[10rem]" for="location4">Lakeside</label>
-        <img src="./images/lakeside.jpg" width="400" height="500"/> 
+          <label class="mb-[10rem]" for="location4">Lakeside</label>
+          <img src="./images/lakeside.jpg" width="400" height="500" />
+        </div>
       </div>
-    </div>
-
-    <div class="flex items-center mb-[10rem] gap-[2rem]">
-      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full"></div>
-      <label>What will you be buried in?</label>
-    </div>
-    <p>(Description)</p>
-    <div class="flex flex-col" name="markerLocation">
-      <div class="flex items-center justify-start gap-[2rem] ml-[4rem]">
-        <input class="w-[30rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black w-[5rem]" class="input-radio"
-          type="radio" name="burialBox" value="box1">
-        <label class="mb-[10rem]" for="box1">Wood pine box</label>
+        
+      <div class="flex items-center mb-[10rem] gap-[2rem]">
+        <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full" onclick="playAudio()">
+          <audio src="./audio/What will you be buried in.m4a"></audio>
+        </div>
+        <label>What will you be buried in?</label>
       </div>
-
-      <div class="flex items-center justify-start gap-[2rem] ml-[4rem]">
-        <input class="w-[30rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black w-[5rem]" class="input-radio"
-          type="radio" name="burialBox" value="box2">
-        <label class="mb-[10rem]" for="box2">Wood willow box</label>
-      </div>
-
-      <div class="flex items-center justify-start gap-[2rem] ml-[4rem]">
-        <input class="w-[30rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black w-[5rem]" class="input-radio"
-          type="radio" name="burialBox" value="box3">
-        <label class="mb-[10rem]" for="box3">Shroud</label>
-      </div>
-    </div>
-
-    <div class="flex items-center mb-[10rem] gap-[2rem]">
-      <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full"></div>
-      <label>Is this a Family Plot?</label>
-    </div>
       <p>(Description)</p>
-    <div class="flex flex-col" name="markerLocation">
-      <div class="flex items-center justify-start gap-[2rem] ml-[4rem]">
-        <input class="w-[30rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black w-[5rem]" class="input-radio"
-          type="radio" name="family" value="Yes">
-        <label class="mb-[10rem]" for="Yes">Yes</label>
+      <div class="flex flex-col" name="markerLocation">
+        <div class="flex items-center justify-start gap-[2rem] ml-[4rem]">
+          <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full" onclick="playAudio()">
+            <audio src="./audio/Wood pine box.m4a"></audio>
+          </div>
+          <input class="w-[30rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black w-[5rem]" class="input-radio"
+            type="radio" name="burialBox" value="box1">
+          <label class="mb-[10rem]" for="box1">Wood pine box</label>
+        </div>
+
+        <div class="flex items-center justify-start gap-[2rem] ml-[4rem]">
+          <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full" onclick="playAudio()">
+            <audio src="./audio/Wood willow box.m4a"></audio>
+          </div>
+          <input class="w-[30rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black w-[5rem]" class="input-radio"
+            type="radio" name="burialBox" value="box2">
+          <label class="mb-[10rem]" for="box2">Wood willow box</label>
+        </div>
+
+        <div class="flex items-center justify-start gap-[2rem] ml-[4rem]">
+          <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full" onclick="playAudio()">
+            <audio src="./audio/Shroud.m4a"></audio>
+          </div>
+          <input class="w-[30rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black w-[5rem]" class="input-radio"
+            type="radio" name="burialBox" value="box3">
+          <label class="mb-[10rem]" for="box3">Shroud</label>
+        </div>
+      </div>
+
+      <div class="flex items-center mb-[10rem] gap-[2rem]">
+        <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full" onclick="playAudio()">
+          <audio src="./audio/Is this a family plot_.m4a"></audio>
+        </div>
+        <label>Is this a Family Plot?</label>
+      </div>
+      <p>(Description)</p>
+      <div class="flex flex-col" name="markerLocation">
+        <div class="flex items-center justify-start gap-[2rem] ml-[4rem]">
+          <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full" onclick="playAudio()">
+            <audio src="./audio/Yes.m4a"></audio>
+          </div>
+          <input class="w-[30rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black w-[5rem]" class="input-radio"
+            type="radio" name="family" value="Yes">
+          <label class="mb-[10rem]" for="Yes">Yes</label>
+        </div>
+
+        <div class="flex items-center justify-start gap-[2rem] ml-[4rem]">
+          <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full" onclick="playAudio()">
+            <audio src="./audio/No.m4a"></audio>
+          </div>
+          <input class="w-[30rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black w-[5rem]" class="input-radio"
+            type="radio" name="family" value="No">
+          <label class="mb-[10rem]" for="No">No</label>
+        </div>
       </div>
 
       <div class="flex items-center justify-start gap-[2rem] ml-[4rem]">
-
-        <input class="w-[30rem] h-[6rem] text-4xl mb-[10rem] border-2 border-black w-[5rem]" class="input-radio"
-          type="radio" name="family" value="No">
-        <label class="mb-[10rem]" for="No">No</label>
+        <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full" onclick="playAudio()">
+          <audio src="./audio/Save and come back later.m4a"></audio>
+        </div>
+        <button onclick=saveToBrowser() class="w-[30rem] h-[6rem] text-4xl mb-[10rem] bg-green-300 dark:text-black"
+          type="button">Save and come back later</button>
       </div>
-    </div>
-
-    <div class="flex justify-center gap-[4rem]">
-      <button onclick=saveToBrowser() class="w-[30rem] h-[6rem] text-4xl mb-[10rem] bg-green-300 dark:text-black"
-        type="button">Save and come back later</button>
-      <button class="w-[30rem] h-[6rem] text-4xl mb-[10rem] mr-8 bg-red-300 dark:text-black" type="submit">Submit
-        Form</button>
-    </div>
+      <div class="flex items-center justify-start gap-[2rem] ml-[4rem]">
+        <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full" onclick="playAudio()">
+          <audio src="./audio/Submit form.m4a"></audio>
+        </div>
+        <button class="w-[30rem] h-[6rem] text-4xl mb-[10rem] mr-8 bg-red-300 dark:text-black" type="submit">Submit
+          Form</button>
+      </div>
   </form>
 </body>
 
