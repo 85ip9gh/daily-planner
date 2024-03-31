@@ -14,7 +14,7 @@ function saveToBrowser() {
   //initalize an empty JS object
   const formObject = {};
 
-  //loop through a structure holding keys (html elements), and store value of html elements
+  //select all html elements of type input
   const inputs = document.querySelectorAll('input');
 
   inputs.forEach(function (input) {
@@ -32,6 +32,30 @@ function saveToBrowser() {
 
   //store the whole object into local browser storage (permanent)
   localStorage.setItem('formData', JSON.stringify(formObject));
+}
+
+/**
+ * Function to submit the form's fields, into the database in future, currently
+ * only saves to browser storage and clears fields.
+ */
+function submitToDB() {
+  //Save current fields to browser, this will be changed to save to the database in Phase 3
+  saveToBrowser();
+
+  //select all input html elements
+  const inputs = document.querySelectorAll('input');
+
+  inputs.forEach(function (input) {
+    //if a field is a radio button, only clear if checked
+    if (input.type == 'radio') {
+      if (input.checked) {
+          input.checked = false;
+      }
+    } else {
+        //all other input fields cleared
+        input.value = '';
+    }
+  });
 }
 
 /**
