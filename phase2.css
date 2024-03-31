@@ -1,3 +1,11 @@
+/**
+ * Purpose: CSS file for the styling of all elements, as well as the 
+ * automatic rendering by tailwind.
+ *
+ * Author(s): Daniel Amirault, Pesanth Janaseth Rangaswamy Anitha, Zachary Ivanoff, Susan Macinnis 
+ */
+
+/** HTML ELEMENTS (default styling for all) */
 * {
   margin: 0;
   padding: 0;
@@ -5,10 +13,15 @@
   font-family: 'Times New Roman', Times, sans-serif;
 }
 
+/** No classes in css file, as tailwind was used */
+
+/** No ids in css file, as tailwind was used */
+
 @layer utilities {
   .content-auto {
-    /* optomizes page rendering by avoiding unnecessary rendering of content 
-        the user does not immediately need */
+    /*
+    Automatically manage page rendering by avoiding unnecessary rendering of content 
+    the user does not immediately need */
     content-visibility: auto;
   }
 }
