@@ -38,8 +38,6 @@ function saveToBrowser() {
     }
   });
 
-  console.log(formData);
-
   //store the whole object into local browser storage (permanent)
   localStorage.setItem('formData', JSON.stringify(formData));
 }
@@ -49,7 +47,7 @@ function saveToBrowser() {
  * only saves to browser storage and clears fields.
  */
 function upload() {
-  console.log("submit");
+
   saveToBrowser();
 
   $.post(SERVER_URL + "/submit", formData, successFn).fail(errorFn);
@@ -74,7 +72,6 @@ function download() {
     formData = data;
     localStorage.setItem('formData', JSON.stringify(formData));
     getFromBrowser();
-    console.log(formData);
   }).fail(errorFn);
 }
 

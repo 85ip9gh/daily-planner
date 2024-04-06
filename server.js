@@ -98,7 +98,7 @@ server.post("/submit", function (req, res) {
   // log the "value" in the "name":"value" pair received
 
   // define a new JSON object to be returned
-  formData = req.body;
+    formData = req.body;
 
   // access the response object via the reference
   // set the associated status to success
