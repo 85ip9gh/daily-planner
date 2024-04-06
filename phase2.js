@@ -6,43 +6,54 @@
  * Author(s): Daniel Amirault, Pesanth Janaseth Rangaswamy Anitha, Zachary Ivanoff, Susan Macinnis 
  */
 
+//Global variable in order to have behaviour be persistent
+let DarkMode = 1;
+
+//initalize an empty JS object
+let formData = {};
+
+// define the base URL for the server
+const SERVER_URL = "http://localhost:4242";
+
+
 /**
  * Function to save the form's fields, in a single object in browser storage
  * on click of save button.
  */
 function saveToBrowser() {
-  //initalize an empty JS object
-  const formObject = {};
 
   //select all html elements of type input
   const inputs = document.querySelectorAll('input');
-
+  
   inputs.forEach(function (input) {
     //if a field is a radio button, only save if checked
     if (input.type == 'radio') {
       if (input.checked) {
-        console.log("radio key: " + input.name + " value: " + input.value);
-        formObject[input.name] = input.value;
+        // console.log("radio key: " + input.name + " value: " + input.value);
+        formData[input.name] = input.value;
       }
     } else {
-      console.log("key: " + input.name + " value: " + input.value);
-      formObject[input.name] = input.value;
+      // console.log("key: " + input.name + " value: " + input.value);
+      formData[input.name] = input.value;
     }
   });
 
+  console.log(formData);
+
   //store the whole object into local browser storage (permanent)
-  localStorage.setItem('formData', JSON.stringify(formObject));
+  localStorage.setItem('formData', JSON.stringify(formData));
 }
 
 /**
  * Function to submit the form's fields, into the database in future, currently
  * only saves to browser storage and clears fields.
  */
-function submitToDB() {
-  //Save current fields to browser, this will be changed to save to the database in Phase 3
+function upload() {
+  console.log("submit");
   saveToBrowser();
 
-  //select all input html elements
+  $.post(SERVER_URL + "/submit", formData, successFn).fail(errorFn);
+  
   const inputs = document.querySelectorAll('input');
 
   inputs.forEach(function (input) {
@@ -58,19 +69,35 @@ function submitToDB() {
   });
 }
 
+function download() {
+  console.log("download");
+  $.get(SERVER_URL + "/form", function(data) {
+    formData = data;
+    localStorage.setItem('formData', JSON.stringify(formData));
+    getFromBrowser();
+  }).fail(errorFn);
+}
+
+function successFn(returnedData) {
+  console.log(returnedData);
+}
+
+function errorFn(err) {
+  console.log(err.responseText);
+}
+
 /**
  * Function for on load, pulls any previously saved data from local browser storage
  * into the form's fields.
  */
 function getFromBrowser() {
-  //parse the object from browser storage
   const retrievedObject = JSON.parse(window.localStorage.getItem('formData'));
 
   //select all the input fields
   const inputs = document.querySelectorAll('input');
 
   //get the values of the parsed JSON object
-  const elements = Object.values(retrievedObject);
+  const elements = Object.values(formData);
 
   //initialize a count variable for radio buttons having multiple fields
   let count = 0;
@@ -92,9 +119,6 @@ function getFromBrowser() {
     }
   }
 }
-
-//Global variable in order to have behaviour be persistent
-let DarkMode = 1;
 
 /**
  * Function used to indicate whether the current display state is dark mode (even) or light mode (odd)

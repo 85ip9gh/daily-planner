@@ -22,6 +22,8 @@
   <!-- Adds JS file to customize tailwind configuration -->
   <script src="./tailwind.config.js"></script>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <!-- add custom css -->
   <link rel="stylesheet" href="phase2.css">
 
@@ -424,7 +426,13 @@
           <label for="No">No</label>
         </div>
       </div>
-
+      <div class="flex items-center justify-start gap-[2rem] ml-[4rem] mb-[10rem]">
+        <div class="w-[5rem]  h-[5rem] bg-yellow-500 rounded-full cursor-pointer" onclick="playAudio(this)">
+          <audio src="./audio/Save and come back later.m4a"></audio>
+        </div>
+        <button onclick=download() class="w-[60rem] h-[10rem] bg-purple-300 dark:text-black"
+          type="button">Download</button>
+      </div>
       <div class="flex items-center justify-start gap-[2rem] ml-[4rem] mb-[10rem]">
         <div class="w-[5rem]  h-[5rem] bg-yellow-500 rounded-full cursor-pointer" onclick="playAudio(this)">
           <audio src="./audio/Save and come back later.m4a"></audio>
@@ -436,7 +444,7 @@
         <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full cursor-pointer" onclick="playAudio(this)">
           <audio src="./audio/Submit form.m4a"></audio>
         </div>
-        <button onclick=submitToDB() class="w-[60rem] h-[10rem] mr-8 bg-red-300 dark:text-black" 
+        <button onclick="upload()" class="w-[60rem] h-[10rem] mr-8 bg-red-300 dark:text-black" 
         type="button">Submit form</button>
       </div>
   </form>
