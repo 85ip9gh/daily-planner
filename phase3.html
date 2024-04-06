@@ -1,8 +1,9 @@
-<!-- The purpose of this file is to display a basic prototype
-    with minimal styling (CSS) to make a natural burial form
-    readable.
+<!-- The purpose of this file is to display a final version
+     with all the tailwind styling, and all functionality, 
+     including implementation using the server.
 
-     Author(s): Daniel Amirault, Pesanth Janaseth Rangaswamy Anitha, Zachary Ivanoff, Susan Macinnis 
+     Author(s): Daniel Amirault, Pesanth Janaseth Rangaswamy Anitha, Zachary Ivanoff, Susan Macinnis
+     Group leader: Daniel Amirault
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -31,12 +32,15 @@
 
 <body onload=download() class="pl-8 text-[6rem] dark:bg-gray-700 dark:text-white w-full max-w-lvw">
   <div class="w-100% flex justify-end">
+     <!-- Button for switching between dark and light styles -->
     <button onclick="toggleDarkMode()"
       class="bg-gray-700 dark:bg-white m-5 p-2 w-[32rem] h-[16rem] rounded dark:text-black text-white">Dark
       Mode</button>
   </div>
+  <!-- Title of website -->
   <p class="text-[12rem] text-center font-bold mb-8">Natural Burial Form</p>
   <form class="form-container flex flex-col mb-[2rem]">
+    <!-- Personal information section -->
     <div class="flex items-center gap-[2rem]">
       <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full cursor-pointer" onclick="playAudio(this)">
         <audio src="./audio/Personal Information.m4a"></audio>
@@ -51,6 +55,7 @@
       <input class="text-black pl-[1rem] w-[50rem] h-[8rem] border-2 border-black" type="text" name="Name">
     </div>
 
+    <!-- Personal date of birth section -->
     <div class="flex items-center gap-[2rem] mb-[2rem]">
       <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full cursor-pointer" onclick="playAudio(this)">
         <audio src="./audio/Date of Birth.m4a"></audio>
@@ -81,6 +86,7 @@
       <input class="text-black pl-[1rem] w-[50rem] h-[8rem]  border-2 border-black" type="text" name="dobYear">
     </div>
 
+    <!-- Personal contact information section -->
     <div class="flex items-center gap-[2rem] mb-[2rem]">
       <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full cursor-pointer" onclick="playAudio(this)">
         <audio src="./audio/Contact Info description.m4a"></audio>
@@ -105,6 +111,7 @@
       <input class="text-black pl-[1rem] w-[50rem] h-[8rem]  border-2 border-black" type="tel" name="phone">
     </div>
 
+    <!-- Personal optional information section -->
     <div class="flex items-center gap-[2rem] mb-[2rem]">
       <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full cursor-pointer" onclick="playAudio(this)">
         <audio src="./audio/Optional description.m4a"></audio>
@@ -128,6 +135,7 @@
       <input class="text-black pl-[1rem] w-[50rem] h-[8rem]  border-2 border-black" type="text" name="quote">
     </div>
 
+    <!-- Personal address information section -->
     <div class="flex items-center gap-[2rem] mb-[2rem]">
       <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full cursor-pointer" onclick="playAudio(this)">
         <audio src="./audio/Address description.m4a"></audio>
@@ -177,6 +185,7 @@
       <input class="text-black pl-[1rem] w-[50rem] h-[8rem]  border-2 border-black" type="text" name="country">
     </div>
 
+    <!-- Primary contact information section -->
     <div class="flex items-center gap-[2rem] mb-[2rem]">
       <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full cursor-pointer" onclick="playAudio(this)">
         <audio src="./audio/Primary contact description.m4a"></audio>
@@ -209,6 +218,7 @@
       <input class="text-black pl-[1rem] w-[50rem] h-[8rem]  border-2 border-black" type="tel" name="contactPhone">
     </div>
 
+    <!-- Primary contact address information section -->
     <div class="flex items-center gap-[2rem] mb-[2rem]">
       <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full cursor-pointer" onclick="playAudio(this)">
         <audio src="./audio/Contact Address description.m4a"></audio>
@@ -260,6 +270,7 @@
       <input class="text-black pl-[1rem] w-[50rem] h-[8rem]  border-2 border-black" type="text" name="contactCountry">
     </div>
 
+    <!-- Grave marker type selection using radio buttons -->
     <div class="flex items-center gap-[2rem]">
       <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full cursor-pointer" onclick="playAudio(this)">
         <audio src="./audio/Grave Marker  description.m4a"></audio>
@@ -309,7 +320,7 @@
       <img src="./images/Tree.jpg" />
     </div>
 
-
+    <!-- Grave marker location selection using radio buttons -->
     <div class="flex items-center mb-[10rem] gap-[2rem]">
       <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full cursor-pointer" onclick="playAudio(this)">
         <audio src="./audio/Grave location description.m4a"></audio>
@@ -358,6 +369,7 @@
         <img src="./images/lakeside.jpg" width="400" height="500" />
       </div>
 
+      <!-- Burial type selection using radio buttons -->
       <div class="flex items-center mb-[10rem] gap-[2rem]">
         <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full cursor-pointer" onclick="playAudio(this)">
           <audio src="./audio/What will you be buried in description.m4a"></audio>
@@ -394,6 +406,7 @@
         </div>
       </div>
 
+      <!-- Yes/no for a family plot using radio buttons -->
       <div class="flex items-center mb-[10rem] gap-[2rem]">
         <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full cursor-pointer" onclick="playAudio(this)">
           <audio src="./audio/Is this a family plot description.m4a"></audio>
@@ -418,6 +431,7 @@
           <label for="No">No</label>
         </div>
       </div>
+      <!-- Button to retrieve server data, store into browser local storage and populate fields  -->
       <div class="flex items-center justify-start gap-[2rem] ml-[4rem] mb-[10rem]">
         <div class="w-[5rem]  h-[5rem] bg-yellow-500 rounded-full cursor-pointer" onclick="playAudio(this)">
           <audio src="./audio/Save and come back later.m4a"></audio>
@@ -425,6 +439,7 @@
         <button onclick=download() class="w-[60rem] h-[10rem] bg-purple-300 dark:text-black"
           type="button">Download</button>
       </div>
+      <!-- Button to only save to browser local storage  -->
       <div class="flex items-center justify-start gap-[2rem] ml-[4rem] mb-[10rem]">
         <div class="w-[5rem]  h-[5rem] bg-yellow-500 rounded-full cursor-pointer" onclick="playAudio(this)">
           <audio src="./audio/Save and come back later.m4a"></audio>
@@ -432,6 +447,7 @@
         <button onclick=saveToBrowser() class="w-[60rem] h-[10rem] bg-green-300 dark:text-black"
           type="button">Save</button>
       </div>
+      <!-- Button to upload local storage data to the server, and clear fields  -->
       <div class="flex items-center justify-start gap-[2rem] ml-[4rem] mb-[10rem]">
         <div class="w-[5rem] h-[5rem] bg-yellow-500 rounded-full cursor-pointer" onclick="playAudio(this)">
           <audio src="./audio/Submit form.m4a"></audio>
