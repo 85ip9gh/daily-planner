@@ -1,21 +1,23 @@
 /**
  * Purpose: JS file to hold functions to handle saving the form to
- * browser storage, loading it from browser storage, toggling dark mode
- * and playing audio
+ * browser storage, uploading data to the server and retreiving data
+ * from the server. Also has function to handle toggling dark mode
+ * and playing audio. This file uses functions from ExpressClient.js
+ * provided by Terry Goldsmith.
  *
- * Author(s): Daniel Amirault, Pesanth Janaseth Rangaswamy Anitha, Zachary Ivanoff, Susan Macinnis 
+ * Author(s): Terry Goldsmith, Daniel Amirault, Pesanth Janaseth Rangaswamy Anitha, Zachary Ivanoff, Susan Macinnis 
  */
 
 //Global variable in order to have behaviour be persistent
 let DarkMode = 1;
 
-//initalize an empty JS object
+//Initialize an empty JS object
 let formData = {};
 
-// define the base localhost URL for the server
+// Define the base localhost URL for the server
 //const SERVER_URL = "http://localhost:4242";
 
-// define the base ugdev URL for the server
+// Define the base ugdev URL for the server
 const SERVER_URL = "http://ugdev.cs.smu.ca:4242";
 
 
@@ -46,8 +48,11 @@ function saveToBrowser() {
 }
 
 /**
- * Function to submit the form's fields, into the database in future, currently
- * only saves to browser storage and clears fields.
+ * Function to submit the form's fields, first saving into local
+ * storage, and then uploading the saved object to the server using a 
+ * post.
+ * 
+ * Modelled from ExpressClient.js, post() function
  */
 function upload() {
 
@@ -70,6 +75,13 @@ function upload() {
   });
 }
 
+/**
+ * Function to retrieve data from the server using get, load
+ * it into local browser storage and populate fields with
+ * the data.
+ * 
+ * Modelled from ExpressClient.js, get() function
+ */
 function download() {
   $.get(SERVER_URL + "/form", function(data) {
     formData = data;
@@ -78,10 +90,26 @@ function download() {
   }).fail(errorFn);
 }
 
+
+/*
+  The purpose of this function is to log the JSON object received
+  from the server.
+
+  returnedData - contains the JSON object returned by the server
+
+  Author: Terry Goldsmith
+*/
 function successFn(returnedData) {
   console.log(returnedData);
 }
 
+/*
+  The purpose of this function is to log the error.
+
+  err - the error object returned by the server
+
+  Author: Terry Goldsmith
+*/
 function errorFn(err) {
   console.log(err.responseText);
 }

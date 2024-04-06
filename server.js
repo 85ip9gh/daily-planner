@@ -1,14 +1,11 @@
-/*
-  The purpose of this file is to create a very basic Express framework
-  server that has 2 endpoints:
-            one for a GET request and one for a POST request
-
-  Note: You must run "npm install express" once in the public_html
-        folder first. You do not need to repeat this step for
-        different servers.
-
-  Author: Terry Goldsmith
-*/
+/**
+ * Purpose: JS file to create a basic express framework server with 
+ * get and post requests. First run requires "npm install express" in public_html
+ * if running on ugdev. This file is strongly modelled  off the example
+ * ExpressServer.js provided by Terry Goldsmith.
+ *
+ * Author(s): Terry Goldsmith, Daniel Amirault, Pesanth Janaseth Rangaswamy Anitha, Zachary Ivanoff, Susan Macinnis 
+ */
 
 // start the Express framework and make it accessible via the reference
 const express = require("express");
@@ -19,7 +16,7 @@ const server = express();
 // set the port where the server listens for clients
 const port = 4242;
 
-// define an empty object to hold the form data
+// define an object to hold default form data
 let formData = {
   Name: "John Deer",
   achievements:"Acquired $1 billion in assets",
