@@ -12,8 +12,11 @@ let DarkMode = 1;
 //initalize an empty JS object
 let formData = {};
 
-// define the base URL for the server
-const SERVER_URL = "http://localhost:4242";
+// define the base localhost URL for the server
+//const SERVER_URL = "http://localhost:4242";
+
+// define the base ugdev URL for the server
+const SERVER_URL = "http://ugdev.cs.smu.ca:4242";
 
 
 /**
