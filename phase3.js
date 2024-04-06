@@ -70,11 +70,11 @@ function upload() {
 }
 
 function download() {
-  console.log("download");
   $.get(SERVER_URL + "/form", function(data) {
     formData = data;
     localStorage.setItem('formData', JSON.stringify(formData));
     getFromBrowser();
+    console.log(formData);
   }).fail(errorFn);
 }
 
@@ -97,25 +97,30 @@ function getFromBrowser() {
   const inputs = document.querySelectorAll('input');
 
   //get the values of the parsed JSON object
-  const elements = Object.values(formData);
-
-  //initialize a count variable for radio buttons having multiple fields
-  let count = 0;
-
-  //loop through the input fields
-  for (var i in inputs) {
-    //if a field is a radio button
-    if (inputs[i].type == "radio") {
-      //check if radio button option matches the one saved into the JSON object
-      if (inputs[i].value == elements[count]) {
-        //if so, check the radio button
-        inputs[i].checked = true;
-        count++;
+  const elements = Object.values(retrievedObject);
+  
+  for (const key in retrievedObject) {
+    if (retrievedObject.hasOwnProperty(key)) {
+      // Find the input elements in the form using their name attribute
+      const inputElements = document.querySelectorAll(`[name="${key}"]`);
+  
+      // If input elements found
+      if (inputElements.length > 0) {
+        // If it's a radio input
+        if (inputElements[0].type === "radio") {
+          // Loop through radio buttons to find the one that matches the value from the JSON object
+          inputElements.forEach(function (radio) {
+            if (radio.value === retrievedObject[key]) {
+              radio.checked = true; // Check the radio button if its value matches
+            }
+          });
+        } else {
+          // For non-radio inputs, set their value to the corresponding value from the JSON object
+          inputElements.forEach(function (input) {
+            input.value = retrievedObject[key];
+          });
+        }
       }
-    } else {
-      //if not a radio button, simply place the values of the JSON object into the input's value
-      inputs[i].value = elements[count];
-      count++;
     }
   }
 }

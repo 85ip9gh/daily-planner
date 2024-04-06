@@ -20,7 +20,33 @@ const server = express();
 const port = 4242;
 
 // define an empty object to hold the form data
-let formData = {};
+let formData = {
+  Name: "John Deer",
+  achievements:"Acquired $1 billion in assets",
+  address:"123 Main St",
+  burialBox:"box3",
+  city:"Halifax",
+  contactAddress:"123 Main St",
+  contactCity:"Halifax",
+  contactCountry:"Canada",
+  contactEmail:"marydeer123@gmail.com",
+  contactName:"Mary Deer",
+  contactPhone:"1234567890",
+  contactPostalCode:"A1B 2C3",
+  contactProvince:"Nova Scotia",
+  country:"Canada",
+  dobDay:"01",
+  dobMonth:"01",
+  dobYear:"1901",
+  email:"johndeer123@gmail.com",
+  family:"No",
+  markerLocation:"location4",
+  markerType:"type4",
+  phone:"2345678901",
+  postalCode:"A1B 2C3",
+  province:"Nova Scotia",
+  quote:"Good money, good life",
+};
 
 // enable the server to recognize JSON format
 server.use(express.json());
@@ -70,10 +96,10 @@ server.use(allowCrossDomain);
 */
 server.post("/submit", function (req, res) {
   // log the "value" in the "name":"value" pair received
-  
+
   // define a new JSON object to be returned
   formData = req.body;
-  
+
   // access the response object via the reference
   // set the associated status to success
   // place your new JSON object into the response object
