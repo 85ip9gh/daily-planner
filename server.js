@@ -18,7 +18,7 @@ const port = 4242;
 
 // define an object to hold default form data
 let formData = {
-  Name: "John Deer",
+  Name: "John Doe",
   achievements:"Acquired $1 billion in assets",
   address:"123 Main St",
   burialBox:"box3",
@@ -26,8 +26,8 @@ let formData = {
   contactAddress:"123 Main St",
   contactCity:"Halifax",
   contactCountry:"Canada",
-  contactEmail:"marydeer123@gmail.com",
-  contactName:"Mary Deer",
+  contactEmail:"janedoe123@gmail.com",
+  contactName:"Jane Doe",
   contactPhone:"1234567890",
   contactPostalCode:"A1B 2C3",
   contactProvince:"Nova Scotia",
@@ -35,7 +35,7 @@ let formData = {
   dobDay:"01",
   dobMonth:"01",
   dobYear:"1901",
-  email:"johndeer123@gmail.com",
+  email:"johndoe123@gmail.com",
   family:"No",
   markerLocation:"location4",
   markerType:"type4",
