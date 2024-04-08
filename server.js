@@ -77,12 +77,6 @@ const allowCrossDomain = function (req, res, next) {
 server.use(allowCrossDomain);
 
 /*
-  Preset the anonymous function to be the function called whenever a POST
-  request is received by this server at the endpoint
-  http://ugdev.cs.smu.ca:3026/myPost
-*/
-
-/*
   The purpose of this function is to respond to a POST request with relative
   endpoint: /myPost
 
