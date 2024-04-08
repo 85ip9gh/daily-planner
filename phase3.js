@@ -74,20 +74,7 @@ function upload() {
     }
   });
 }
-
-/**
- * Function to load the form's fields from the server on page load.
- * If there is no data in local storage, it will download the data
- * from the server.
- */
-function pageOnLoad(){
-  if(localStorage.getItem('formData') != null){
-    getFromBrowser();
-  }else{
-    download();
-  }
-}
-
+ 
 /**
  * Function to retrieve data from the server using get, load
  * it into local browser storage and populate fields with
